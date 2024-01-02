@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+.container {
+  border-radius: 1em;
+  background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+  margin: 1em;
+  padding: 1em;
+}
+
+.star img {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1em;
+}
+
+.content p {
+  font-size: 0.9375rem;
+  color: hsl(217, 12%, 63%);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.option {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.75em;
+  text-align: center;
+  cursor: pointer;
+  color: hsl(217, 12%, 63%);
+}
+
+.option:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+#container-2 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you {
+  margin-top: 2em;
+}
+
+.selection {
+  margin: 1em 0;
+  padding: 0.75em 0.25em;
+  border: none;
+  border-radius: 2rem;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  font-size: 0.75rem;
+}
+
+@media (min-width: 321px) {
+  .container {
+    max-width: 300px;
+  }
+}
